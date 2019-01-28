@@ -1,0 +1,84 @@
+#background{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+body{
+  background-color: #696969;
+}
+h1{
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+p{
+  font-family: "Arial", sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+a{
+  font-family: "Arial",sans-serif;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+}
+a:hover {
+  color: #87cefa;
+}
+.name {
+  font-family: "Arial",sans-serif;
+  font-weight: bold;
+  text-align:center;
+  letter-spacing: 5px;
+  position: fixed;
+  color: #FFFFFF;
+  width: 100%;
+  padding-top: 300px;
+  font-size: 75px;
+}
+.description{
+  font-family: "Arial",sans-serif;
+  text-align:center;
+  position: fixed;
+  color: #FFFFFF;
+  width: 100%;
+  padding-top: 375px;
+  font-size: 20px;
+}
+.email{
+  padding-top: 200px;
+  text-align:center;
+}
+.linkedin{
+  padding-top: 25px;
+  text-align:center;
+}
+.github{
+  padding-top: 25px;
+  text-align:center;
+}
+.about-body{
+  padding-right: 300px;
+}
+#contact-link{
+  position: fixed;
+  padding-top: 400px;
+  padding-left: 500px;
+  font-size: 20px;
+}
+#about-link{
+  position: fixed;
+  padding-top: 400px;
+  padding-left: 670px;
+  font-size: 20px;
+}
+#resume-link{
+  position: fixed;
+  padding-top: 400px;
+  padding-left: 800px;
+  font-size: 20px;
+}
+#contactabout-link{
+}
