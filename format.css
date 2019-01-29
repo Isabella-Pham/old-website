@@ -35,7 +35,7 @@ a:hover {
   position: fixed;
   color: #FFFFFF;
   width: 100%;
-  padding-top: 300px;
+  top: 300px;
   font-size: 75px;
 }
 .description{
@@ -44,7 +44,7 @@ a:hover {
   position: fixed;
   color: #FFFFFF;
   width: 100%;
-  padding-top: 375px;
+  top: 375px;
   font-size: 20px;
 }
 .email{
@@ -64,20 +64,20 @@ a:hover {
 }
 #contact-link{
   position: fixed;
-  padding-top: 400px;
-  padding-left: 500px;
+  top: 400px;
+  left: 500px;
   font-size: 20px;
 }
 #about-link{
   position: fixed;
-  padding-top: 400px;
-  padding-left: 670px;
+  top: 400px;
+  left: 670px;
   font-size: 20px;
 }
 #resume-link{
   position: fixed;
-  padding-top: 400px;
-  padding-left: 800px;
+  top: 400px;
+  left: 800px;
   font-size: 20px;
 }
 #contactabout-link{
