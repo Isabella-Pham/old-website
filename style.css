@@ -41,7 +41,7 @@ a:hover {
 .description{
   font-family: "Arial",sans-serif;
   text-align:center;
-  position: fixed;
+  position: absolute;
   color: #FFFFFF;
   width: 100%;
   top: 375px;
@@ -65,25 +65,23 @@ a:hover {
 #contact-link{
   position: absolute;
   text-align: center;
-  top: 400px;
-  width:100%;
+  top: 450px;
   font-size: 20px;
+  width:100%;
 }
 #about-link{
   position: absolute;
   text-align: center;
   top: 400px;
-  right: 150px;
-  width: 100%;
   font-size: 20px;
+  width:100%;
 }
 #resume-link{
   position: absolute;
   text-align: center;
-  top: 400px;
-  left: 150px;
-  width:100%;
+  top: 500px;
   font-size: 20px;
+  width:100%;
 }
 #contactabout-link{
 }
