@@ -66,23 +66,23 @@ a:hover {
   position: absolute;
   text-align: center;
   top: 400px;
-  left: 700px;
-
+  width:100%;
   font-size: 20px;
 }
 #about-link{
   position: absolute;
   text-align: center;
   top: 400px;
-  left: 600px;
-
+  right: 150px;
+  width: 100%;
   font-size: 20px;
 }
 #resume-link{
   position: absolute;
   text-align: center;
   top: 400px;
-  left: 830px;
+  left: 150px;
+  width:100%;
   font-size: 20px;
 }
 #contactabout-link{
