@@ -66,13 +66,15 @@ a:hover {
   position: absolute;
   text-align: center;
   top: 400px;
-  left: 300px;
+  left: 700px;
+
   font-size: 20px;
 }
 #about-link{
   position: absolute;
   text-align: center;
   top: 400px;
+  left: 600px;
 
   font-size: 20px;
 }
@@ -80,7 +82,7 @@ a:hover {
   position: absolute;
   text-align: center;
   top: 400px;
-  left: 100px;
+  left: 830px;
   font-size: 20px;
 }
 #contactabout-link{
