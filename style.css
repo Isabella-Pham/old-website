@@ -4,6 +4,7 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 body{
   background-color: #696969;
@@ -21,11 +22,22 @@ p{
 }
 a{
   font-family: "Arial",sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  font-size: 15px;
   color: #FFFFFF;
 }
 a:hover {
   color: #87cefa;
+}
+.menu li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 5px;
+  border: 1px solid #FFFFFF;
+}
+.menu li a:hover{
+  color:#87cefa;
+  border: 1px solid #87cefa;
 }
 .name {
   font-family: "Arial",sans-serif;
@@ -37,6 +49,21 @@ a:hover {
   width: 100%;
   top: 300px;
   font-size: 75px;
+}
+.intro{
+  text-align:center;
+  position: fixed;
+  width: 100%;
+  top:400px;
+}
+.menu{
+  float: right;
+  list-style: none;
+  margin: 20px;
+}
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
 }
 .description{
   font-family: "Arial",sans-serif;
@@ -59,29 +86,10 @@ a:hover {
   padding-top: 25px;
   text-align:center;
 }
+.about-header{
+  padding-top:100px;
+}
 .about-body{
+  padding-top: 0px;
   padding-right: 300px;
-}
-#contact-link{
-  position: absolute;
-  text-align: center;
-  top: 450px;
-  font-size: 20px;
-  width:100%;
-}
-#about-link{
-  position: absolute;
-  text-align: center;
-  top: 400px;
-  font-size: 20px;
-  width:100%;
-}
-#resume-link{
-  position: absolute;
-  text-align: center;
-  top: 500px;
-  font-size: 20px;
-  width:100%;
-}
-#contactabout-link{
 }
