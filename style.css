@@ -4,6 +4,7 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  object-fit: contain;
   z-index: -1;
 }
 body{
@@ -88,8 +89,19 @@ a:hover {
 }
 .about-header{
   padding-top:100px;
+  padding-left: 100px;
 }
 .about-body{
   padding-top: 0px;
   padding-right: 300px;
+  padding-left: 100px;
+}
+.text{
+  text-align: center;
+  position:fixed;
+  font-family: "Arial",sans-serif;
+  letter-spacing: 5px;
+  font-size: 100px;
+  width: 100%;
+  top: 400px;
 }
