@@ -45,7 +45,7 @@ a:hover {
   font-weight: bold;
   text-align:center;
   letter-spacing: 5px;
-  position: fixed;
+  position:absolute;
   color: #FFFFFF;
   width: 100%;
   top: 300px;
@@ -53,7 +53,7 @@ a:hover {
 }
 .intro{
   text-align:center;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top:400px;
 }
