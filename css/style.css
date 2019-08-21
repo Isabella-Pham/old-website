@@ -1,6 +1,15 @@
 #background{
   position: fixed;
-  right: 0;
+  right: 520px;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+#about-background{
+  position: fixed;
+  right: 520px;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
@@ -8,7 +17,8 @@
   z-index: -1;
 }
 body{
-  background-color: #696969;
+  background-color: black;
+  position:relative;
 }
 h1{
   font-family: "Arial", sans-serif;
@@ -43,19 +53,22 @@ a:hover {
 .name {
   font-family: "Arial",sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align:right;
   letter-spacing: 5px;
   position:absolute;
   color: #FFFFFF;
   width: 100%;
   top: 300px;
-  font-size: 75px;
+  right: 10px;
+  font-size: 60px;
 }
 .intro{
-  text-align:center;
+  text-align:right;
   position: absolute;
   width: 100%;
   top:400px;
+  right:10px;
+  font-size: 13px
 }
 .menu{
   float: right;
@@ -75,25 +88,19 @@ a:hover {
   top: 375px;
   font-size: 20px;
 }
-.email{
-  padding-top: 200px;
-  text-align:center;
-}
-.linkedin{
-  padding-top: 25px;
-  text-align:center;
-}
-.github{
-  padding-top: 25px;
-  text-align:center;
+.info{
+  text-align:left;
+  top:300px;
+  left:1000px;
+  position:absolute;
 }
 .about-header{
-  padding-top:100px;
+  padding-top:300px;
   padding-left: 100px;
 }
 .about-body{
   padding-top: 0px;
-  padding-right: 300px;
+  padding-right: 600px;
   padding-left: 100px;
 }
 .text{
@@ -104,4 +111,12 @@ a:hover {
   font-size: 100px;
   width: 100%;
   top: 400px;
+}
+#me{
+  position:fixed;
+  width: 30%;
+  height:auto;
+  top:250px;
+  left:950px;
+  z-index: -2;
 }
