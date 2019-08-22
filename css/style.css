@@ -1,7 +1,7 @@
 #background{
   position: fixed;
-  right: 30%;
-  bottom: 0;
+  bottom: 0%;
+  right: 35%;
   min-width: 100%;
   min-height: 100%;
   object-fit: contain;
@@ -30,12 +30,13 @@ h1{
 p{
   font-family: "Arial", sans-serif;
   color: #FFFFFF;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.2vw;
+  font-size: 13px;
 }
 a{
   font-family: "Arial",sans-serif;
-  letter-spacing: 5px;
-  font-size: 0.9vw;
+  letter-spacing: 3px;
+  font-size: 13px;
   color: #FFFFFF;
 }
 a:hover {
@@ -51,23 +52,15 @@ a:hover {
   color:#87cefa;
   border: 1px solid #87cefa;
 }
-.name {
-  font-family: "Arial",sans-serif;
-  font-weight: bold;
-  text-align:right;
-  letter-spacing: 0.3vw;
-  position:absolute;
-  color: #FFFFFF;
-  width: 100%;
-  top: 20vw;
-  font-size: 6vw;
+#name {
+  font-size: 65px;
 }
 .intro{
   text-align:right;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top:27vw;
-  font-size: 1vw;
+  top:28%;
+  right: 1%
 }
 .menu{
   float: right;
@@ -88,10 +81,10 @@ a:hover {
   font-size: 20px;
 }
 .info{
+  position:fixed;
   text-align:left;
-  top:300px;
-  left:1000px;
-  position:absolute;
+  top:30%;
+  left:66%;
 }
 .about-header{
   padding-top:20vw;
