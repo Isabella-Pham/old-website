@@ -1,6 +1,6 @@
 #background{
   position: fixed;
-  right: 520px;
+  right: 30%;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
@@ -9,7 +9,7 @@
 }
 #about-background{
   position: fixed;
-  right: 520px;
+  right: 31%;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
@@ -25,17 +25,17 @@ h1{
   font-family: "Arial", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
-  letter-spacing: 3px;
+  letter-spacing: 0.3vw;
 }
 p{
   font-family: "Arial", sans-serif;
   color: #FFFFFF;
-  letter-spacing: 3px;
+  letter-spacing: 0.3vw;
 }
 a{
   font-family: "Arial",sans-serif;
   letter-spacing: 5px;
-  font-size: 15px;
+  font-size: 0.9vw;
   color: #FFFFFF;
 }
 a:hover {
@@ -55,21 +55,19 @@ a:hover {
   font-family: "Arial",sans-serif;
   font-weight: bold;
   text-align:right;
-  letter-spacing: 5px;
+  letter-spacing: 0.3vw;
   position:absolute;
   color: #FFFFFF;
   width: 100%;
-  top: 300px;
-  right: 10px;
-  font-size: 60px;
+  top: 20vw;
+  font-size: 6vw;
 }
 .intro{
   text-align:right;
   position: absolute;
   width: 100%;
-  top:400px;
-  right:10px;
-  font-size: 13px
+  top:27vw;
+  font-size: 1vw;
 }
 .menu{
   float: right;
@@ -96,13 +94,12 @@ a:hover {
   position:absolute;
 }
 .about-header{
-  padding-top:300px;
-  padding-left: 100px;
+  padding-top:20vw;
+  padding-left: 6.5vw;
 }
 .about-body{
-  padding-top: 0px;
-  padding-right: 600px;
-  padding-left: 100px;
+  padding-left: 6.5vw;
+  padding-right: 40vw;
 }
 .text{
   text-align: center;
@@ -117,7 +114,7 @@ a:hover {
   position:fixed;
   width: 30%;
   height:auto;
-  top:250px;
-  left:950px;
+  top:25%;
+  left:65%;
   z-index: -2;
 }
