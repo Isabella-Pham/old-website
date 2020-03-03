@@ -17,6 +17,16 @@
   z-index: -1;
   filter:brightness(60%)
 }
+#resume-background{
+  position: fixed;
+  bottom: -7%;
+  right: -5%;
+  min-width: 50%;
+  min-height: 50%;
+  object-fit: contain;
+  z-index: -1;
+  filter: brightness(80%);
+}
 body{
   background-color: black;
   position:relative;
@@ -110,4 +120,7 @@ a:hover {
   top:25%;
   left:65%;
   z-index: -2;
+}
+.project a{
+  font-color:black;
 }
