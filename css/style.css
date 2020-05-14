@@ -121,6 +121,18 @@ a:hover {
   left:65%;
   z-index: -2;
 }
-.project a{
+.projects a{
   font-color:black;
+}
+
+.projects{
+  list-style: none;
+  padding-right: 40%;
+}
+
+.projects li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 5px;
+  border: 1px solid #FFFFFF;
 }
