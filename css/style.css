@@ -9,7 +9,7 @@
 }
 #about-background{
   position: fixed;
-  right: 31%;
+
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
@@ -104,10 +104,10 @@ a:hover {
 }
 .about-header{
   padding-top:20vw;
-  padding-left: 6.5vw;
+  padding-left: 4.5vw;
 }
 .about-body{
-  padding-left: 6.5vw;
+  padding-left: 4.5vw;
   padding-right: 40vw;
 }
 .text{
@@ -123,9 +123,9 @@ a:hover {
   position:fixed;
   width: 30%;
   height:auto;
-  top:25%;
-  left:65%;
-  z-index: -2;
+  top:30%;
+  left:67%;
+  z-index: 0;
 }
 
 .accordion {
