@@ -1,8 +1,47 @@
 <!doctype html>
 <html lang = "en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 55%;
+    border-bottom:2px solid #696969;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: #696969;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 52.5%;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+</style>
+
 <body id = "page-top" data-scroll-animation="true" style = "background-color:#CCCCCC">
-  <script src="script.js"></script>
+
   <link href="../css/style.css" rel="stylesheet" type="text/css">
   <img src="../media/spirited away.jpg" id = "resume-background">
 
@@ -13,64 +52,37 @@
     <li><a href="projects.html">PROJECTS</a></li>
     <li><a href="https://drive.google.com/open?id=1H1Hss-UwrhwXFdpIAFXyKDZRTUHofcRo" target="_blank">RESUME</a></li>
   </ul>
-  <ul class="projects">
-    <li><h1 style="color:black">Amazon: Krypto</h1>
-      <p style="color:black">
-          <b>Description:</b> Krypto is a data aggregation tool named after Krypto the Superdog.<br/><br/>
-          <b>Programming Languages:</b> Python, SQL, Java<br/><br/>
-          <b>Technologies:</b> AWS (Redshift, Lambda, S3, EC2, Cloudwatch, DynamoDB), ELK Stack (Elasticsearch, Logstash, Kibana), Security Protocols (LDAP Groups, AWS Cognito, OIDC Verification, IAM Roles) <br/><br/>
-          <b>Other Learnings:</b> Mockito, JUnit Testing, Kinesis Streams, Kinesis Firehose, SNS/SQS<br/><br/>
-      </p>
-    </li>
-    <li><h1 style="color:black">Amazon: Accessibility Resource Finder (ARF)</h1>
-      <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
-      </p>
-    </li>
-    <li><h1 style="color:black">Colgate-Palmolive: Capillaroscopy</h1>
-      <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
-      </p>
-    </li>
-    <li><h1 style="color:black">Colgate-Palmolive: Quantitative Light Induced Flourescence (QLF)</h1>
-      <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
-      </p>
-    </li>
-    <li><h1 style="color:black">Colgate-Palmolive: Infrared Spectroscopy</h1>
-      <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
-      </p>
-    </li>
-    <li><h1 style="color:black">SEQAM Lab: Diet App</h1>
-      <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
-      </p>
-    <li>
-      <li><h1 style="color:black">School Project: Where's the File (WTF)?</h1>
-        <p style="color:black">
-            <b>Description:</b> "Where's the file?" (abbreviated WTF) is a version control system written in C that allows up to 10 clients modify a repository in a remote server containing code projects.
-            It was written for my Systems Programming (CS214) class at Rutgers University to display proficiency in socket programming, multithreading, and file I/O. <br/><br/>
-            <b>Programming Languages:</b> C <br/><br/>
-            <b>Technologies:</b> Sockets, Multithreading, file I/O<br/><br/>
-            <b>Other Learnings:</b> <br/><br/>
-        </p>
-      <li>
-  </ul>
+  <button class="accordion"><h1 style="color:black">Amazon</h1></button>
+  <div class="panel">
+    <h2 style="color:black">Krypto</h2>
+    <h2 style="color:black">Accesbility Resource Finder (ARF)</h2>
+  </div>
+
+  <button class="accordion"><h1 style="color:black">Colgate-Palmolive</h1></button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+
+  <button class="accordion"><h1 style="color:black">School</h1></button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>

@@ -37,6 +37,12 @@ h1{
   color: #FFFFFF;
   letter-spacing: 0.3vw;
 }
+h2{
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0.3vw;
+}
 p{
   font-family: "Arial", sans-serif;
   color: #FFFFFF;
@@ -136,3 +142,4 @@ a:hover {
   padding: 5px;
   border: 1px solid #FFFFFF;
 }
+
