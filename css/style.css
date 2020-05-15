@@ -39,7 +39,7 @@ h1{
 }
 h2{
   font-family: "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   color: #FFFFFF;
   letter-spacing: 0.3vw;
 }
@@ -127,19 +127,39 @@ a:hover {
   left:65%;
   z-index: -2;
 }
-.projects a{
-  font-color:black;
+
+.accordion {
+  background-color: #CCCCCC;
+  color: #CCCCCC;
+  cursor: pointer;
+  width: 55%;
+  border:none;
+  border-bottom: 2px solid #696969;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
 }
 
-.projects{
-  list-style: none;
-  padding-right: 45%;
+.active, .accordion:hover {
+  background-color: #969696;
 }
 
-.projects li a{
-  text-decoration: none;
-  color: #FFFFFF;
-  padding: 5px;
-  border: 1px solid #FFFFFF;
+.panel {
+  padding: 0 2%;
+  background-color: #C7C7C7;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 51%;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
 
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
