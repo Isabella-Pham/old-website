@@ -9,7 +9,6 @@
 }
 #about-background{
   position: fixed;
-
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
@@ -17,7 +16,7 @@
   z-index: -1;
   filter:brightness(60%)
 }
-#resume-background{
+#projects-background{
   position: fixed;
   bottom: -7%;
   right: -5%;
@@ -153,13 +152,16 @@ a:hover {
   width: 51%;
 }
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 40px;
   color: #777;
   float: right;
+  border: none;
   margin-left: 5px;
+  line-height: 10%;
+  padding-bottom: 10px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
 }
