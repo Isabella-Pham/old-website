@@ -11,11 +11,14 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
+  <!--
+  IN PROGRESS LOADER
   <div class = "loader">
       <img src="media/noodles.gif" loop="3">
       <br/>
       <p>loading...</p>
   </div>
+  -->
 
   <video autoplay muted loop id="background">
     <source src="media/comet.mp4" type="video/mp4">
@@ -51,36 +54,28 @@
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript">
+
     function wait(ms){
         var d = new Date();
         var d2 = null;
         do { d2 = new Date(); }
         while(d2-d < ms);
     }
-    function getCookie(name) {
-      return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1];
-    }
     function load(){
       jQuery(document).ready(function($){
-        var check=getCookie("loader");
-        if (check!="false") {
-          var loader="true";
-        }else{
-          loader=check;
-        };
-        if(loader=="true") {
-          document.cookie="loader=false";
-          loader=getCookie("loader");
+        if(!(sessionStorage.getItem('firstVisit') === '1')){
+          sessionStorage.setItem('firstVisit','1');
           wait(4000);
           $('.loader').fadeOut('slow');
         }else{
-          $('.loader').style.display = 'none';
+          var loader = document.getElementById("loader");
+          loader.style.display = "none";
         }
       });
     }
     load();
-  </script>
-  <script src="app.js"></script>
+    </script>
+    <script src="app.js"></script>
 
 </body>
 </html>
