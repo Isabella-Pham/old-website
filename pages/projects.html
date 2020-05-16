@@ -40,9 +40,9 @@
     <br/><h2 style="color:black">Krypto</h2><br/>
     <p style="color:black">
         <b>Background:</b>
-          Imagine you're an Amazon Music customer. For some reason, you keeps hearing the song "Never Gonna Give You Up".
+          Imagine you're an Amazon Music customer. For some reason, you keep hearing the song "Never Gonna Give You Up".
           You then furiously call customer support saying "If I hear the song 'Never Gonna Give You Up' one more damn time I am going to cancel my Amazon Music Subscription".
-          Of course, Amazon does not want that. Thus, developers will spend hours scouring through the data stored in AWS Redshift and writing involved SQL queries to see what happened that caused you to get Rick Rolled several times.
+          Of course, Amazon does not want that. And so, developers will spend hours scouring through the data stored in AWS Redshift and writing involved SQL queries (which can be up to a couple hundred lines) to see what happened that caused you to get Rick Rolled several times.
           But alas! These SQL queries only return giant tables of text, and reading this text to find the problem is not easy.</br><br/>
         <b>Description:</b> Krypto is a data aggregation tool named after Krypto the Superdog. To solve the problem described, I created Krypto by programming a transfer pipeline from AWS Redshift to AWS Elasticsearch, as Elasticsearch comes with a configurable data visualizatoin tool known as Kibana.
           My pipeline would use lambdas that are triggered when new data is updated to AWS Redshift and would then transfer this data to AWS S3, as I use S3 as an intermediary between Elasticsearch and Redshift so that it could serve as an ingestion point for more data that is not stored in Redshift.
