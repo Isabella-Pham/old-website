@@ -39,7 +39,15 @@
   <div class="panel">
     <br/><h2 style="color:black">Krypto</h2><br/>
     <p style="color:black">
-        <b>Description:</b> Krypto is a data aggregation tool named after Krypto the Superdog.<br/><br/>
+        <b>Description:</b> Krypto is a data aggregation tool named after Krypto the Superdog.
+          Imagine you're an Amazon Music customer. For some reason, you keeps hearing the song "Never Gonna Give You Up".
+          You then furiously call customer support saying "If I hear the song 'Never Gonna Give You Up' one more damn time I am going to cancel my Amazon Music Subscription".
+          Of course, Amazon does not want that. Thus, developers will spend hours scouring through the data stored in AWS Redshift and writing involved SQL queries to see what happened that caused you to get Rick Rolled several times.
+          But alas! These SQL queries only return giant tables of text, and reading this text to find the problem is not easy.</br>
+          To solve this problem, I created Krypto by programming a transfer pipeline from AWS Redshift to AWS Elasticsearch, as Elasticsearch comes with a configurable data visualizatoin tool known as Kibana.
+          My pipeline would use lambdas that are triggered when new data is updated to AWS Redshift and would then transfer this data to AWS S3, as I use S3 as an intermediary between Elasticsearch and Redshift so that it could serve as an ingestion point for more data that is not stored in Redshift.
+          When the data is injected into S3, another lambda then runs Python code to index the data into Elasticsearch.
+          With the data in Elasticsearch, I configured Kibana to create visualizations such as graphs and charts to make it easier to spot trends and disrepencies in data.<br/><br/>
         <b>Programming Languages:</b> Python, SQL, Java<br/><br/>
         <b>Technologies:</b> AWS (Redshift, Lambda, S3, EC2, Cloudwatch, DynamoDB), ELK Stack (Elasticsearch, Logstash, Kibana), Security Protocols (LDAP Groups, AWS Cognito, OIDC Verification, IAM Roles) <br/><br/>
         <b>Other Learnings:</b> Mockito, JUnit Testing, Kinesis Streams, Kinesis Firehose, SNS/SQS<br/><br/>
