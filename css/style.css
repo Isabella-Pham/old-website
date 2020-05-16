@@ -121,10 +121,10 @@ a:hover {
   top: 400px;
 }
 #me{
-  position:fixed;
+  position:absolute;
   width: 30%;
   height:auto;
-  top:30%;
+  top:40%;
   left:67%;
   z-index: 0;
 }
