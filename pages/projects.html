@@ -39,12 +39,12 @@
   <div class="panel">
     <br/><h2 style="color:black">Krypto</h2><br/>
     <p style="color:black">
-        <b>Description:</b> Krypto is a data aggregation tool named after Krypto the Superdog.
+        <b>Background:</b>
           Imagine you're an Amazon Music customer. For some reason, you keeps hearing the song "Never Gonna Give You Up".
           You then furiously call customer support saying "If I hear the song 'Never Gonna Give You Up' one more damn time I am going to cancel my Amazon Music Subscription".
           Of course, Amazon does not want that. Thus, developers will spend hours scouring through the data stored in AWS Redshift and writing involved SQL queries to see what happened that caused you to get Rick Rolled several times.
-          But alas! These SQL queries only return giant tables of text, and reading this text to find the problem is not easy.</br>
-          To solve this problem, I created Krypto by programming a transfer pipeline from AWS Redshift to AWS Elasticsearch, as Elasticsearch comes with a configurable data visualizatoin tool known as Kibana.
+          But alas! These SQL queries only return giant tables of text, and reading this text to find the problem is not easy.</br><br/>
+        <b>Description:</b> Krypto is a data aggregation tool named after Krypto the Superdog. To solve the problem described, I created Krypto by programming a transfer pipeline from AWS Redshift to AWS Elasticsearch, as Elasticsearch comes with a configurable data visualizatoin tool known as Kibana.
           My pipeline would use lambdas that are triggered when new data is updated to AWS Redshift and would then transfer this data to AWS S3, as I use S3 as an intermediary between Elasticsearch and Redshift so that it could serve as an ingestion point for more data that is not stored in Redshift.
           When the data is injected into S3, another lambda then runs Python code to index the data into Elasticsearch.
           With the data in Elasticsearch, I configured Kibana to create visualizations such as graphs and charts to make it easier to spot trends and disrepencies in data.<br/><br/>
@@ -55,10 +55,19 @@
     </p>
     <br/><br/><h2 style="color:black">Accesbility Resource Finder (ARF)</h2><br/>
     <p style="color:black">
-        <b>Description:</b> <br/><br/>
-        <b>Programming Languages:</b> <br/><br/>
-        <b>Technologies:</b> <br/><br/>
-        <b>Other Learnings:</b> <br/><br/>
+        <b>Background:</b> Every year, Amazon hosts the AFE intern hackathon.
+          In this hackathon, Amazon interns use Amazon technology to help nonprofit organizations.
+          The organization my team decided to help was the Tyler Schrenk Foundation (TSF), an organization dedicated to helping quadriplegics become more independent.
+          Tyler Schrenk, a quadriplegic himself, described many of his challenges how he was unable to find all the resources available to him.
+          Thus, the Accesbility Resource Finder was born and became the winning Amazon intern hackathon project.<br/><br/>
+        <b>Description:</b> The ARF is an Alexa skill programmed in Javascript within an AWS Lambda that is triggered once the skill is invoked.
+        It is able to talk to individuals and find tools that suited their needs using a decision tree algorithm.
+        For example if an individual wanted more control over their house by controlling the lights, the ARF can redirect them to an Alexa skill to help them do so.
+        Additionally, when visiting the TSF’s website, I noticed that in order to receive assistance from the organization, an individual would have to fill out a form on their website.
+        I wanted to create a way for quadriplegics to do this on their own, thus I added to the ARF the ability to surf websites by using JSSoup to scrape websites as well as the ability to fill out and submit forms using just voice controls. <br/><br/>
+        <b>Programming Languages:</b> Javascript<br/><br/>
+        <b>Technologies:</b> AWS (Lambda), Node.js, JSsoup, Alexa Skills Development SDK<br/><br/>
+        <b>Other Learnings:</b> Being able to help someone with my computer science skills is an amazing experience<br/><br/>
     </p>
   </div>
   <button class="accordion"><h1 style="color:black">Colgate-Palmolive</h1></button>
@@ -122,7 +131,6 @@
           It was written for my Principles of Information and Data Management (CS336) class at Rutgers University to display proficiency in database management, AWS, and SQL. <br/><br/>
           <b>Programming Languages:</b> SQL, Java, HTML <br/><br/>
           <b>Technologies:</b> AWS (RDS, EC2), Java Server Pages (JSP), Tomcat <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
           ___________________________________
       </p>
     <br/><h2 style="color:black"> CS214: Where's the File (WTF)?</h2><br/>
@@ -131,7 +139,6 @@
           It was written for my Systems Programming (CS214) class at Rutgers University to display proficiency in socket programming, multithreading, and file I/O. <br/><br/>
           <b>Programming Languages:</b> C <br/><br/>
           <b>Technologies:</b> Sockets, Multithreading, file I/O<br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
           ___________________________________
       </p>
     <br/><h2 style="color:black"> CS111: Song App</h2><br/>
@@ -140,7 +147,6 @@
           It was written for my Introduction to Computer Science (CS111) class at Rutgers University to display proficiency in Java programming, understanding of Java classes, and system I/O.<br/><br/>
           <b>Programming Languages:</b> Java <br/><br/>
           <b>Technologies:</b> none (just pure Java) <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
       </p>
   </div>
 </div>
