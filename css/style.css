@@ -155,7 +155,8 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  width: 55.25%;
+  width: 55.55%;
+  margin: -5px;
 }
 .accordion:after {
   content: '\002B'; /* Unicode character for "plus" sign (+) */
