@@ -61,22 +61,22 @@
       return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1];
     }
     function load(){
-      var check=getCookie("loader");
-      if (check!="false") {
-        var loader="true";
-      }else{
-        loader=check;
-      };
-      if (loader=="true") {
-        document.cookie="loader=false";
-        loader=getCookie("loader");
-        jQuery(document).ready(function($){
-            wait(4000);
-            $('.loader').fadeOut('slow');
-        });
-      }else{
-        $('.loader').remove();
-      }
+      jQuery(document).ready(function($){
+        var check=getCookie("loader");
+        if (check!="false") {
+          var loader="true";
+        }else{
+          loader=check;
+        };
+        if(loader=="true") {
+          document.cookie="loader=false";
+          loader=getCookie("loader");
+          wait(4000);
+          $('.loader').fadeOut('slow');
+        }else{
+          $('.loader').style.display = 'none';
+        }
+      });
     }
     load();
   </script>
