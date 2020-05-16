@@ -10,6 +10,13 @@
   <link href="boostrap/boostrap.min.css" rel = "stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <div class = "loader">
+      <img src="media/noodles.gif" loop="3">
+      <br/>
+      <p>loading...</p>
+  </div>
+
   <video autoplay muted loop id="background">
     <source src="media/comet.mp4" type="video/mp4">
   </video>
@@ -42,11 +49,23 @@
     <p>Sophomore at Rutgers University-New Brunswick</p></br>
   </div>
 
-  <script>
-    $(window).on("load",function(){
-      $(".loader-wrapper").fadeOut("slow");
-    });
-</script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript">
+  function wait(ms){
+      var d = new Date();
+      var d2 = null;
+      do { d2 = new Date(); }
+      while(d2-d < ms);
+    }
+    function load(){
+      jQuery(document).ready(function($){
+          wait(5000);
+          $('.loader').fadeOut('slow');
+      });
+    }
+    load();
+  </script>
   <script src="app.js"></script>
+
 </body>
 </html>
