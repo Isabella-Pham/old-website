@@ -51,17 +51,30 @@
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript">
-  function wait(ms){
-      var d = new Date();
-      var d2 = null;
-      do { d2 = new Date(); }
-      while(d2-d < ms);
+    function wait(ms){
+        var d = new Date();
+        var d2 = null;
+        do { d2 = new Date(); }
+        while(d2-d < ms);
+    }
+    function getCookie(name) {
+      return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1];
     }
     function load(){
-      jQuery(document).ready(function($){
-          wait(5000);
-          $('.loader').fadeOut('slow');
-      });
+      var check=getCookie("loader");
+      if (check!="false") {
+        var loader="true";
+      }else{
+        loader=check;
+      };
+      if (loader=="true") {
+        document.cookie="loader=false";
+        loader=getCookie("loader");
+        jQuery(document).ready(function($){
+            wait(4000);
+            $('.loader').fadeOut('slow');
+        });
+      }
     }
     load();
   </script>
