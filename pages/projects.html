@@ -1,22 +1,40 @@
 <!doctype html>
 <html lang = "en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Projects</title>
+</head>
 
 <body id = "page-top" data-scroll-animation="true" style = "background-color:#CCCCCC">
 
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet" type="text/css">
   <img src="../media/spirited away.jpg" id = "projects-background">
 
-  <ul class="menu">
-    <li><a href="../index.html">HOME</a><li>
-    <li><a href="contact.html">CONTACT</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="projects.html">PROJECTS</a></li>
-    <li><a href="https://drive.google.com/open?id=1H1Hss-UwrhwXFdpIAFXyKDZRTUHofcRo" target="_blank">RESUME</a></li>
-  </ul>
+  <nav>
+      <div class="logo">
+          <h4>Isabella Pham  │ </h4>
+      </div>
+      <ul class = "nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="https://drive.google.com/open?id=1H1Hss-UwrhwXFdpIAFXyKDZRTUHofcRo" target="_blank">RESUME</a></li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
 
   <br/>
   <br/>
+  <br/>
+  <br/>
+
+<div class = "projectList">
   <button class="accordion"><h1 style="color:black">Amazon</h1></button>
   <div class="panel">
     <h2 style="color:black">Krypto</h2>
@@ -118,6 +136,8 @@
           <b>Other Learnings:</b> <br/><br/>
       </p>
   </div>
+</div>
+
   <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -134,6 +154,7 @@
       });
     }
   </script>
+  <script src="../app.js"></script>
 
 </body>
 </html>
