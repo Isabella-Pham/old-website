@@ -11,9 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
-  <!--
-  IN PROGRESS LOADER   -->
-  <div class = "loader">
+  <div hidden class = "loader">
       <img src="media/noodles.gif" loop="3">
       <br/>
       <p>loading...</p>
@@ -68,18 +66,9 @@
           wait(5000);
           $('.loader').fadeOut('slow');
         }else{
-          var loader = document.getElementById("loader");
-          loader.style.display = "none";
+          $('.loader').hide();
         }
 
-        /*if(!(sessionStorage.getItem('firstVisit') === '1')){
-          sessionStorage.setItem('firstVisit','1');
-          wait(5000);
-          $('.loader').fadeOut('slow');
-        }else{
-          var loader = document.getElementById("loader");
-          loader.style.display = "none";
-        }*/
       });
     }
     load();
