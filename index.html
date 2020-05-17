@@ -65,9 +65,9 @@
         if(url.indexOf('index.html') >= 0){
           wait(3500);
           $('.loader').fadeOut('slow');
-          $(this).remove();
+          $('loader').remove();
         }else{
-          $('.loader').hide();
+          $('.loader').remove();
         }
 
       });
