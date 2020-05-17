@@ -12,13 +12,13 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!--
-  IN PROGRESS LOADER
+  IN PROGRESS LOADER   -->
   <div class = "loader">
       <img src="media/noodles.gif" loop="3">
       <br/>
       <p>loading...</p>
   </div>
-  -->
+
 
   <video autoplay muted loop id="background">
     <source src="media/comet.mp4" type="video/mp4">
@@ -62,15 +62,24 @@
         while(d2-d < ms);
     }
     function load(){
+      var url = document.URL;
       jQuery(document).ready(function($){
-        if(!(sessionStorage.getItem('firstVisit') === '1')){
-          sessionStorage.setItem('firstVisit','1');
-          wait(4000);
+        if(url.indexOf('index.html') >= 0){
+          wait(5000);
           $('.loader').fadeOut('slow');
         }else{
           var loader = document.getElementById("loader");
           loader.style.display = "none";
         }
+
+        /*if(!(sessionStorage.getItem('firstVisit') === '1')){
+          sessionStorage.setItem('firstVisit','1');
+          wait(5000);
+          $('.loader').fadeOut('slow');
+        }else{
+          var loader = document.getElementById("loader");
+          loader.style.display = "none";
+        }*/
       });
     }
     load();
