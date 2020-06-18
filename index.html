@@ -62,15 +62,15 @@
         while(d2-d < ms);
     }
     function load(){
-      var url = document.URL;
+      //var url = document.URL;
       jQuery(document).ready(function($){
-        if(url.indexOf('index.html') >= 0){
+        //if(url.indexOf('index.html') >= 0){
           wait(3000);
           $('.loader').fadeOut('slow');
           $('loader').remove();
-        }else{
-          $('.loader').remove();
-        }
+        //}else{
+          //$('.loader').remove();
+        //}
 
       });
     }
