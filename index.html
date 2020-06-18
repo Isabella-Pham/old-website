@@ -52,7 +52,7 @@
     <p>Sophomore at <b>Rutgers University-New Brunswick</b></p></br>
   </div>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript">
 
     function wait(ms){
@@ -62,14 +62,7 @@
         while(d2-d < ms);
     }
     function load(){
-      $(function(){ // this replaces document.ready
-        setTimeout(function(){
-          $('.loader').fadeOut('slow', function() {
-            $(this).remove();
-          });
-        }, 3000);
-     });
-      /*var url = document.URL;
+      var url = document.URL;
       $(window).on("load",function(){
         if(url.indexOf('index.html') >= 0){
           wait(3000);
@@ -81,7 +74,7 @@
               $(this).remove();
           }
         }
-      });*/
+      });
     }
     load();
     </script>
