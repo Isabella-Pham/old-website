@@ -15,7 +15,7 @@
 <div hidden class = "loader">
     <img src="media/noodles.gif" loop="3">
     <br/>
-    <p>fixing some bugs..</p>
+    <p>loading...</p>
 </div>
 
 
@@ -64,15 +64,13 @@
     function load(){
       var url = document.URL;
       $(window).on("load",function(){
-        if(url.indexOf('index.html') >= 0){
+        if(url.indexOf('index.html') < 0){
           wait(3000);
           $('.loader').fadeOut('slow',function(){
               $('.loader').remove();
           });
         }else{
-          //$('.loader').fadeOut('slow',function(){
-              $('.loader').remove();
-          //});
+          $('.loader').remove();
         }
       });
     }
