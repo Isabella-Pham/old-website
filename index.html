@@ -66,8 +66,9 @@
       $(window).on("load",function(){
         if(url.indexOf('index.html') >= 0){
           wait(3000);
-          $('.loader').fadeOut('slow');
-          $('loader').remove();
+          $('.loader').fadeOut('slow',function()){
+              $('loader').remove();
+          }
         }else{
           $('.loader').remove();
         }
