@@ -11,14 +11,13 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
-<!--
-preloader in progress
+
 <div hidden class = "loader">
     <img src="media/noodles.gif" loop="3">
     <br/>
     <p>loading...</p>
 </div>
--->
+
 
   <video autoplay muted loop id="background">
     <source src="media/comet.mp4" type="video/mp4">
@@ -66,7 +65,7 @@ preloader in progress
       var url = document.URL;
       jQuery(document).ready(function($){
         if(url.indexOf('index.html') >= 0){
-          wait(3500);
+          wait(3000);
           $('.loader').fadeOut('slow');
           $('loader').remove();
         }else{
@@ -75,7 +74,7 @@ preloader in progress
 
       });
     }
-    //load();
+    load();
     </script>
     <script src="app.js"></script>
 
