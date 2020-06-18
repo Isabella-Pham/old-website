@@ -62,18 +62,26 @@
         while(d2-d < ms);
     }
     function load(){
-      var url = document.URL;
+      $(function(){ // this replaces document.ready
+        setTimeout(function(){
+          $('.loader').fadeOut('slow', function() {
+            $(this).remove();
+          });
+        }, 3000);
+     });
+      /*var url = document.URL;
       $(window).on("load",function(){
         if(url.indexOf('index.html') >= 0){
           wait(3000);
           $('.loader').fadeOut('slow',function()){
-              $('loader').remove();
+              $(this).remove();
           }
         }else{
-          $('.loader').remove();
+          $('.loader').fadeOut('slow',function()){
+              $(this).remove();
+          }
         }
-
-      });
+      });*/
     }
     load();
     </script>
