@@ -66,19 +66,20 @@
       $(window).on("load",function(){
         if(url.indexOf('index.html') >= 0){
           wait(3000);
-          $('.loader').fadeOut('slow',function()){
-              $(this).remove();
-          }
+          $('.loader').fadeOut('slow',function(){
+              $('.loader').remove();
+          });
         }else{
-          $('.loader').fadeOut('slow',function()){
-              $(this).remove();
-          }
+          //$('.loader').fadeOut('slow',function(){
+              $('.loader').remove();
+          //});
         }
       });
     }
     load();
-    </script>
-    <script src="app.js"></script>
+
+  </script>
+  <script src="app.js"></script>
 
 </body>
 </html>
