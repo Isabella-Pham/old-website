@@ -147,14 +147,25 @@
   <div class="panel">
     <br/><h2 style="color:black">Nutrition Data Mapping</h2><br/>
       <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
+          <b>Background:</b> Nutritional deficiencies, overweight, and obesity are health problems that have become increasingly concerning in the United States.
+            SEQAM Lab and Samsung research are currently working together on developing machine learning software that can scan images and detect the type of food it is, its ingredients and their amounts, as well as nutritional information about the dish itself.
+            With this software, SEQAM Lab aims to create a phone app that could determine the food in an image and its nutritional information as individuals like to take pictures of their food. <br/><br/>
+          <b>Description:</b> In order to provide nutritional information on dishes, we need enriched data of the nutritional information of many different ingredients.
+            Thus, I created a Python program to query the USDA database through their API.
+            First, SEQAM Lab created a web crawler to collect recipes from the Internet.
+            Then, a list of ingredients was created from all of these recipes.
+            Each ingredient was then queried through the USDA JSON API which returned a list of all relevant results.
+            To find the most relevant result to the ingredient, natural language processing through the NLTK library was used to identify different parts of speech.
+            Then, the Matplotlib library was used to determine the entropy distribution of queries to qualitatively determine a proper entropy cutoff to ensure the acucracy of results.
+            If results were not accurate enough, the ingredient was then queried through the Nutritionix JSON API. <br/><br/>
+          <b>Programming Languages:</b> Python<br/><br/>
+          <b>Technologies:</b> NLTK, Matplotlib, USDA JSON API, Nutritionix JSON API<br/><br/>
+          <b>Other Learnings:</b> Writing a research paper, presenting research <br/><br/>
           ___________________________________
       </p>
     <br/><h2 style="color:black">Recipe Annotator</h2><br/>
       <p style="color:black">
+          <b>Background:</b> Same as above <br/><br/>
           <b>Description:</b> <br/><br/>
           <b>Programming Languages:</b> <br/><br/>
           <b>Technologies:</b> <br/><br/>
