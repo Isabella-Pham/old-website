@@ -78,7 +78,7 @@
             Goldman Sachs uses this software to create communication links between units such as clients, brokers, and exchanges in order for trades to be executed.
             In other words, when a trade is made a message is sent from the client using RabbitMQ to all units needed to execute that trade.<br/><br/>
           <b>Description:</b> Eagleview is an analytical web app that creates a model of the RabbitMQ communications.
-            It models the communications by creating a graph where each node is a different unit (client, brokerage, exchange) and each edge represents a communication between them.
+            It models the communications by creating a graph where each node is a different unit (client, brokerage, or exchange) and each edge represents a communication between them.
             When clicking on a specific node, a side panel appears with additional information about it and buttons that redirect to other sources of data about the node such as MongoDB, Pulse, or Grafana.
             The graph and its related data is not only used to visualize communications, but to create a machine learning model to perform predictive analysis and predict problems before they happen.
             By doing so, we can address these problems prematurely to decrease latency and ensure that transactions happen fast and smoothly.
@@ -92,16 +92,23 @@
   <div class="panel">
     <br/><h2 style="color:black">Capillaroscopy</h2><br/>
       <p style="color:black">
-          <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
-          <b>Technologies:</b> <br/><br/>
-          <b>Other Learnings:</b> <br/><br/>
+          <b>Background:</b> Capillaroscopy is a diagnostic technique used to reveal capillaries.
+            The initial images taken during capillaroscopy however can be hard to analyze as the capillaries may not be easily identifiable.
+            Thus, we can create an algorithm to reveal capillaries in great detail.
+            Then, we can analyze factors such as blood flow and look for any anomalies such as broken capillaries which could be used to identify health issues such as gingivitis.<br/><br/>
+          <b>Description:</b> I created an image enhancement software in MATLAB to enhance the capillaries in capillaroscopic images.
+            To define the capillaries, I used several filters such as an alpha trimmed mean filter (used to remove non-Gaussian noise from an image, essentially it uses mathematical formulas to look for pixel deviations from other pixels that make the image appear "fuzzy") and histogram equalization (used to enhance the contrast of the image).
+            Additionally, I created my own algorithm to trace the capillaries in an image to make them further stand out and calculated the diameter of these capillaries.
+            Gingivitis causes blood vessel inflammation, thus we can identify it by determining if the diameter of the capillaries are greater than they should be.<br/><br/>
+          <b>Programming Languages:</b> Matlab<br/><br/>
+          <b>Technologies:</b> MATLAB image filters<br/><br/>
+          <b>Other Learnings:</b> Capillaroscopy and the biology behind it<br/><br/>
           ___________________________________
       </p>
     <br/><h2 style="color:black">Quantitative Light Induced Flourescence (QLF)</h2><br/>
       <p style="color:black">
           <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
+          <b>Programming Languages:</b> Matlab<br/><br/>
           <b>Technologies:</b> <br/><br/>
           <b>Other Learnings:</b> <br/><br/>
           ___________________________________
@@ -110,7 +117,7 @@
     <br/><h2 style="color:black">Infrared Spectroscopy</h2><br/>
       <p style="color:black">
           <b>Description:</b> <br/><br/>
-          <b>Programming Languages:</b> <br/><br/>
+          <b>Programming Languages:</b> Matlab<br/><br/>
           <b>Technologies:</b> <br/><br/>
           <b>Other Learnings:</b> <br/><br/>
       </p>
