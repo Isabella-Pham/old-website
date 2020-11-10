@@ -126,7 +126,7 @@ a:hover {
   right:7%
 }
 .about-header{
-  padding-top:20vw;
+  padding-top:5vw;
   padding-left: 3vw;
   padding-right: 40vw;
   padding-bottom: 10px;
@@ -146,9 +146,9 @@ a:hover {
 }
 #me{
   position:absolute;
-  width: 30%;
+  width: 20%;
   height:auto;
-  top:30%;
+  top:20%;
   left:67%;
   z-index: 0;
 }
