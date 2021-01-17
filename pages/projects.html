@@ -177,7 +177,29 @@
   </div>
   <button class="accordion"><h1 style="color:black">DataDog</h1></button>
   <div class="panel">
-    <br/><p style="color:black">Coming soon...</p><br/>
+    <br/><h2 style="color:black">Starlette Integration</h2><br/>
+      <p style="color:black">
+          <b>Background:</b> Datadog’s tracer can be implemented in a app by importing the <a href="https://github.com/DataDog/dd-trace-py" target="_blank" style="color:black;">ddtrace library</a> and calling the patch() method.
+          When calling the patch() method, Datadog's tracer code is integrated into the different libraries the app uses (e.g. django, sanic, etc..) via a process known as monkey patching.
+          Monkey patching is when certain parts of code are replaced and/or added into the existing code using function decorators and function wrappers to add to the code's intended functionality.
+          In other words, if an intended segment of code was to send a message from one device to another, this functionality is preserved while also adding in a new functionality to send this data to the Datadog tracer as well.
+          There’s lots of different metrics that can be collected and sent to Datadog such as the duration for a specific task, their status code and whether or not there was an error, and more.
+          With this data, individuals can monitor their applications and ensure that there are no problems with its performance.<br/><br/>
+          <b>Description:</b> There are many different Datadog tracer integrations for each Python library, as the internal ways the code works differ from library to library.
+          For example, an async library sends data differently than a sync one, thus the Datadog tracer must work differently as well (e.g. by waiting for the async function to complete in order to retrieve the data that it used).
+          Thus, I created a Datadog tracer integration for the Starlette library.<br/><br/>
+          <b>Programming Languages:</b> Python <br/><br/>
+          <b>Technologies:</b> Starlette, tox, Datadog tracer <br/><br/>
+          <b>Other Learnings:</b> Contributing to open source software  <br/><br/>
+      </p>
+      <br/><h2 style="color:black">HTTP Refactor</h2><br/>
+        <p style="color:black">
+            <b>Background:</b> Coming soon... <br/><br/>
+            <b>Description:</b> Coming soon... <br/><br/>
+            <b>Programming Languages:</b> Python <br/><br/>
+            <b>Technologies:</b> Starlette, asgi, django, sanic, bottle, tox, Datadog tracer <br/><br/>
+            <b>Other Learnings:</b> Improving existing code for readability and uniformity <br/><br/>
+        </p>
   </div>
   <button class="accordion"><h1 style="color:black">Snapchat</h1></button>
   <div class="panel">
